@@ -43,7 +43,7 @@ export default function Demo() {
       </AppShell.Header>
 
       <AppShell.Navbar p="md"><Navbar opened={opened} toggle={toggle} /></AppShell.Navbar>
-      <AppShell.Footer p="md">Footer</AppShell.Footer>
+      {/* <AppShell.Footer p="md">Footer</AppShell.Footer> */}
 
       <AppShell.Main>
         <section id="welcome">
