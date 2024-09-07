@@ -32,7 +32,7 @@ export function AboutSection({title, text, image}: AboutSectionProps) {
             {text}  
             </Text>
           </div>
-          <Image src={image} className={classes.image} />
+          <Image src={image} className={classes.image} radius="lg"/>
         </div>
       </Container>
     );

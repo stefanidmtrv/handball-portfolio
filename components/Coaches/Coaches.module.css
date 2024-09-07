@@ -1,0 +1,24 @@
+.icon {
+    color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-3));
+}
+
+.name {
+font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+}
+
+.coachesContainer {
+    width: 800px;
+    justify-content: center;
+    padding-top: calc(var(--mantine-spacing-xl));
+    padding-bottom: calc(var(--mantine-spacing-xl));
+    
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 300px;
+    }
+}
+
+.coachAvatar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

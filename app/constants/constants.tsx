@@ -92,23 +92,32 @@ export const coaches = [
     {
         name: bulgarian ? "Галин Лазаров" : "Galin Lazarov",
         title: bulgarian ? "председател" : "Chairman",
-        img: "https://randomuser.me/api/portraits/lego/6.jpg"
+        img: "https://randomuser.me/api/portraits/lego/6.jpg",
+        email: "galinlazarov1961@abv.bg",
+        phone: "0879486960"
     },
     {
         name: bulgarian ? "Димитър Джепков" : "Dimitar Dzhepkov",
         title: bulgarian ? "старши треньор" : "Head Coach",
-        img: "https://randomuser.me/api/portraits/lego/1.jpg"
+        img: "https://randomuser.me/api/portraits/lego/1.jpg",
+        email: "-",
+        phone: "0898575754"
     },
     {
         name: bulgarian ? "Румяна Георгиева" : "Rumyana Georgieva",
         title: bulgarian ? "консултант" : "Consultant",
-        img: "https://randomuser.me/api/portraits/lego/2.jpg"
+        img: "https://randomuser.me/api/portraits/lego/2.jpg",
+        email: "-",
+        phone: "-"
     },
     {
         name: bulgarian ? "Емилия Самуилова" : "Emiliya Samuilova",
         title: bulgarian ? "младши треньор" : "Junior Coach",
-        img: "https://randomuser.me/api/portraits/lego/4.jpg"
+        img: "https://randomuser.me/api/portraits/lego/4.jpg",
+        email: "-",
+        phone: "-"
     }
+
 ]
 
 export const services = [
@@ -324,19 +333,4 @@ export const goals = [
     {
         text: bulgarian ? "ПОВИШАВАНЕТО НА НИВОТО НА ВСИЧКИ СПОРТИСТИ В КЛУБА, КОЕТО ДА ДОВЕДЕ ДО УЧАСТИЕ В „А“ РЕПУБЛИКАНСКА ХАНДБАЛНА ГРУПА ЗА ЖЕНИ И МЪЖЕ." : "РАЗВИВАНЕ НА МЛАДИ ТАЛАНТИ."
     },
-]
-
-export const contact = [
-    {
-        name: bulgarian ? "ДИМИТЪР ДЖЕПКОВ" : "Dimitar Dzhepkov",
-        title: bulgarian ? "СТАРШИ ТРЕНЬОР" : "Head Coach",
-        email: "",
-        phone: "0898575754"
-    },
-    {
-        name: bulgarian ? "ГАЛИН ЛАЗАРОВ" : "Galin Lazarov",
-        title: bulgarian ? "ПРЕДСЕДАТЕЛ" : "Chairman",
-        email: "galinlazarov1961@abv.bg",
-        phone: "0879486960"
-    }
 ]
