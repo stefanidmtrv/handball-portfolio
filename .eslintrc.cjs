@@ -14,5 +14,10 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
     'linebreak-style': 'off',
+    '@typescript-eslint/quotes': 'off',
+    "no-trailing-spaces": "off",
+    "eol-last": "off",
+    'no-unused-vars': 'off',
+    "quotes": "off" // Disables the quotes rule for TypeScript
   },
 };
