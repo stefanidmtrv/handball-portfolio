@@ -12,7 +12,12 @@ const data = [
     { link: 'goals', label: 'Goals' },
   ];
 
-export function Navbar() {
+interface ChildComponentProps {
+  opened: boolean;
+  toggle: () => void;
+}
+
+export function Navbar({ opened, toggle }: ChildComponentProps) {
     const [active, setActive] = useState('Welcome');
 
     const links = data.map((item) => (
@@ -24,7 +29,9 @@ export function Navbar() {
           onClick={(event) => {
             event.preventDefault();
             setActive(item.label);
-
+            if (opened) {
+                toggle();
+            }
             const section = document.getElementById(item.link);
             if (section) {
                 let top = section.getBoundingClientRect().top + window.scrollY - 59;

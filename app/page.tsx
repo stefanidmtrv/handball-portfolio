@@ -24,13 +24,6 @@ export default function Demo() {
         breakpoint: 'sm',
         collapsed: { mobile: !opened },
       }}
-      // padding="md"
-      // styles={() => ({
-      //   main: {
-      //     paddingTop: 0, // Remove top padding from AppShell.Main,
-      //     marginTop: 0,
-      //   },
-      // })}
     >
       <AppShell.Header>
         <Group h="100%" w="100%" px="md">
@@ -49,7 +42,7 @@ export default function Demo() {
         </Group>
       </AppShell.Header>
 
-      <AppShell.Navbar p="md"><Navbar /></AppShell.Navbar>
+      <AppShell.Navbar p="md"><Navbar opened={opened} toggle={toggle} /></AppShell.Navbar>
       <AppShell.Footer p="md">Footer</AppShell.Footer>
 
       <AppShell.Main>
