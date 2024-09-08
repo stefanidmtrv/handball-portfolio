@@ -181,7 +181,21 @@ export const achievementsText = [
     }
 ]
 
-export const achievementsList = [
+interface AchievementText {
+    achievement: string;
+}
+
+interface Achievement {
+    date: string;
+    achievements: AchievementText[];
+}
+
+interface AchievementList {
+    title: string;
+    dates: Achievement[];
+}
+
+export const achievementsList: AchievementList[] = [
     {
         title: bulgarian ? "КЛАСИРАНЕ НА ЗОНАЛЕН ФИНАЛ В ЗХС ВИТОША" : "CLASSIFICATION OF THE ZONAL FINAL IN VITOSHA ZHS",
         dates: [
@@ -241,7 +255,7 @@ export const achievementsList = [
         title: bulgarian ? "КЛАСИРАНЕ НА ДЪРЖАВЕН ФИНАЛ" : "STATE FINAL CLASSIFICATION",
         dates: [
             {
-                date: bulgarian ? "2018/2019Г." : "",
+                date: bulgarian ? "2018/2019Г." : "2018/2019Г.",
                 achievements: [
                     {
                         achievement: bulgarian ? "М11-6ТО МЯСТО" : "М11-6ТО МЯСТО"
@@ -252,7 +266,7 @@ export const achievementsList = [
                 ]
             },
             {
-                date: bulgarian ? "2020/2021Г." : "",
+                date: bulgarian ? "2020/2021Г." : "2020/2021Г.",
                 achievements: [
                     {
                         achievement: bulgarian ? "Ж12-1ВО МЯСТО" : "Ж12-1ВО МЯСТО"
@@ -266,7 +280,7 @@ export const achievementsList = [
                 ]
             },
             {
-                date: bulgarian ? "2021/2022Г." : "",
+                date: bulgarian ? "2021/2022Г." : "2021/2022Г.",
                 achievements: [
                     {
                         achievement: bulgarian ? "М11-3ТО МЯСТО" : "М11-3ТО МЯСТО"
