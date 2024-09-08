@@ -1,7 +1,7 @@
 'use client';
 
 import { useDisclosure } from '@mantine/hooks';
-import { AppShell, Burger, Group, Image } from '@mantine/core';
+import { AppShell, Burger, Group, Image, Text } from '@mantine/core';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
 import { About } from '@/components/About/About';
@@ -12,6 +12,7 @@ import { Goals } from '@/components/Goals/Goals';
 import { Partners } from '@/components/Partners/Partners';
 import { Services } from '@/components/Services/Services';
 import { Navbar } from '@/components/Navbar/Navbar';
+import { welcomeText } from './constants/constants';
 
 export default function Demo() {
   const [opened, { toggle }] = useDisclosure();
@@ -35,6 +36,7 @@ export default function Demo() {
               size="sm"
             />
             {/* <Image src='logo.png' w="xl" h="xl"/>  */}
+            <Text size="lg">{welcomeText.clubName}</Text>
           </Group>
           <Group ml="auto">
             {/* <ColorSchemeToggle /> */}

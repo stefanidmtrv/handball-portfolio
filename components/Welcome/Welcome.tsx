@@ -7,7 +7,7 @@ export function Welcome() {
     <Stack align='center'>
       <Title className={classes.title} ta="center" mt={100} maw="1000px">
         {welcomeText.title}{' '}
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+        <Text inherit variant="gradient" component="span" gradient={{ from: 'blue', to: 'cyan' }}>
           {welcomeText.clubName}
         </Text>
       </Title>
