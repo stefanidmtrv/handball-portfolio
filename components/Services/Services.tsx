@@ -8,6 +8,7 @@ import {
   } from '@mantine/core';
   import classes from './Services.module.css';
   import { services } from '@/app/constants/constants';
+  
 interface ServicesCardProps {
     title: string;
     text: string;
