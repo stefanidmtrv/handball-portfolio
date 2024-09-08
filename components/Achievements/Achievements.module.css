@@ -8,3 +8,11 @@
       margin-top: var(--mantine-spacing-sm);
     }
   }
+
+.achievementText {
+    overflow-wrap: break-word;
+    
+    @media (max-width: $mantine-breakpoint-md) {
+        max-width: 250px;
+    }
+}

@@ -29,7 +29,7 @@ export function AchievementTimeline({ title, dates }: AchievementList) {
                         <List mt={15} spacing="sm" size="sm">
                             {
                                 achievement.achievements.map((item) => {
-                                    return <List.Item><Text fz="sm" c="dimmed">{item.achievement}</Text></List.Item>
+                                    return <List.Item><Text fz="sm" c="dimmed" className={classes.achievementText}>{item.achievement}</Text></List.Item>
                                 })
                             }
                         </List>

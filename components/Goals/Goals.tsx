@@ -19,14 +19,14 @@ interface GoalsCardProps {
 export function ServicesCard( {index, text}: GoalsCardProps) {
     return (
         <Card key={index} shadow="md" radius="md" className={classes.card} padding="xl">
-            <Group>
+            <Stack align='center'>
             <div className={classes.goalNumber}>
                 {index}
             </div>
             <Text fz="sm">
                 {text}
             </Text>
-            </Group>
+            </Stack>
         </Card>
         );
 }
