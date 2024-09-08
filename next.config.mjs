@@ -13,3 +13,13 @@ export default withBundleAnalyzer({
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
 });
+
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = {
+  assetPrefix: isProd ? '/handball-portfolio/' : '',
+  images: {
+    unoptimized: true,
+  },
+  basePath: isProd ? '/handball-portfolio' : '',
+};
