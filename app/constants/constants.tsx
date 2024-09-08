@@ -309,26 +309,29 @@ export const achievementsList: AchievementList[] = [
     },
 ]
 
-/* PLACEHOLDER */
 export const gallaryPhotos = [
-    {
-        img: 'Images/image1.jpg'
-    },
-    {
-        img: 'Images/image2.jpg'
-    },
-    {
-        img: 'Images/image3.jpg'
-    },
     {
         img: 'Images/image4.jpg'
     },
     {
+        img: 'Images/image6.jpg'
+    },
+    {
+        img: 'Images/image3.jpg'
+    },
+    
+    {
         img: 'Images/image5.jpg'
     },
     {
-        img: 'Images/image6.jpg'
+        img: 'Images/image2.jpg'
     },
+    
+    
+    {
+        img: 'Images/image1.jpg'
+    },
+    
 ]
 
 export const goals = [

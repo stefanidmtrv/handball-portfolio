@@ -1,0 +1,8 @@
+.image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+    @media (max-width: $mantine-breakpoint-md) {
+      width: 80vw;
+      margin-top: 20px;
+    }
+  }
