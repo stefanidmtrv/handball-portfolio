@@ -1,7 +1,7 @@
 'use client';
 
 import { useDisclosure } from '@mantine/hooks';
-import { AppShell, Burger, Group } from '@mantine/core';
+import { AppShell, Burger, Group, Image } from '@mantine/core';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
 import { About } from '@/components/About/About';
@@ -34,10 +34,10 @@ export default function Demo() {
               hiddenFrom="sm"
               size="sm"
             />
-            Logo
+            {/* <Image src='logo.png' w="xl" h="xl"/>  */}
           </Group>
           <Group ml="auto">
-            <ColorSchemeToggle />
+            {/* <ColorSchemeToggle /> */}
           </Group>
         </Group>
       </AppShell.Header>

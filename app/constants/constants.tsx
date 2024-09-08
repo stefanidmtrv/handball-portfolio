@@ -1,14 +1,3 @@
-// import img1 from "../assets/Images/IMG-20240831-WA0001.jpg";
-// import img2 from "../assets/Images/IMG-20240831-WA0002.jpg";
-// import img3 from "../assets/Images/IMG-20240831-WA0003.jpg";
-// import img4 from "../assets/Images/IMG-20240831-WA0004.jpg";
-// import img5 from "../assets/Images/IMG-20240831-WA0005.jpg";
-// import img6 from "../assets/Images/IMG-20240831-WA0006.jpg";
-// import handballFederation from "../assets/bulgarian_handball_federation.png";
-// import ministry from "../assets/Ministry.png";
-// import sofiaMunicipality from "../assets/СТОЛИЧНА ОБЩИНА.png";
-// import logo from "../assets/logo.png";
-
 const bulgarian = false;
 
 export const teamLogo = '/logo.png';
@@ -59,10 +48,10 @@ export const navLinks = [
         id: "goals",
         title: bulgarian ? "Цели" : "Goals",
     },
-    {
-        id: "contacts",
-        title: bulgarian ? "Контакти" : "Contacts",
-    },
+    // {
+    //     id: "contacts",
+    //     title: bulgarian ? "Контакти" : "Contacts",
+    // },
 ]
 
 export const aboutUs = [

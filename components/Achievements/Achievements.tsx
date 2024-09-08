@@ -1,7 +1,7 @@
 import { Group, List, Stack, ThemeIcon, Title, rem } from "@mantine/core";
 import { Timeline, Text } from '@mantine/core';
 import { IconGitBranch, IconGitPullRequest, IconGitCommit, IconMessageDots, IconCheck } from '@tabler/icons-react';
-import { achievementsList } from "@/app/constants/constants";
+import { achievementsList, navLinks } from "@/app/constants/constants";
 import classes from './Achievements.module.css';
 
 interface AchievementText {
@@ -44,7 +44,7 @@ export function AchievementTimeline({ title, dates }: AchievementList) {
 export function Achievements() {
 return (
     <>
-        <Title order={1} ta="center" mt={100}>Achievements</Title>
+        <Title order={1} ta="center" mt={100}>{navLinks.map((item) => {if (item.id === 'achievements') return item.title;})}</Title>
             <Group justify="center" align="top" mt="xl" p="sm">
             {
                 achievementsList.map((achievementLs) => {

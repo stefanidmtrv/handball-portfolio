@@ -1,10 +1,10 @@
 import { Grid, Container, Title, Image, Text, Stack, Card } from "@mantine/core";
-import { partners, partnersNoImage } from "@/app/constants/constants";
+import { navLinks, partners, partnersNoImage } from "@/app/constants/constants";
 
 export function Partners() {
 return (
     <>
-        <Title order={1} ta="center" mt={100}>Partners</Title>
+        <Title order={1} ta="center" mt={100}>{navLinks.map((item) => {if (item.id === 'partners') return item.title;})}</Title>
         <Container my="md">
             <Grid align="center" justify="center" ta="center">
                 {

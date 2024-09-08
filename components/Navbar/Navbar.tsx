@@ -1,16 +1,6 @@
 import { useState } from 'react';
 import classes from './Navbar.module.css';
-
-const data = [
-    { link: 'welcome', label: 'Welcome' },
-    { link: 'about', label: 'About' },
-    { link: 'coaches', label: 'Coaches' },
-    { link: 'services', label: 'Services' },
-    { link: 'partners', label: 'Partners' },
-    { link: 'achievements', label: 'Achievements' },
-    { link: 'gallery', label: 'Gallery' },
-    { link: 'goals', label: 'Goals' },
-  ];
+import { navLinks } from '@/app/constants/constants';
 
 interface ChildComponentProps {
   opened: boolean;
@@ -20,29 +10,29 @@ interface ChildComponentProps {
 export function Navbar({ opened, toggle }: ChildComponentProps) {
     const [active, setActive] = useState('Welcome');
 
-    const links = data.map((item) => (
+    const links = navLinks.map((item) => (
         <a
           className={classes.link}
-          data-active={item.label === active || undefined}
-          href={item.link}
-          key={item.label}
+          data-active={item.id === active || undefined}
+          href={item.id}
+          key={item.id}
           onClick={(event) => {
             event.preventDefault();
-            setActive(item.label);
+            setActive(item.id);
             if (opened) {
                 toggle();
             }
-            const section = document.getElementById(item.link);
+            const section = document.getElementById(item.id);
             if (section) {
                 let top = section.getBoundingClientRect().top + window.scrollY - 59;
-                if (item.link === "welcome") {
+                if (item.id === "welcome") {
                     top -= 110;
                 }
                 window.scrollTo({ top, behavior: 'smooth' });
             }
           }}
         >
-          <span className={classes.linkIcon}>{item.label}</span>
+          <span className={classes.linkIcon}>{item.title}</span>
         </a>
       ));
 

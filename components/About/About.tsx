@@ -1,6 +1,7 @@
 import { Image, Container, Title, Text } from '@mantine/core';
 import { aboutUs } from '@/app/constants/constants';
 import classes from './About.module.css';
+import { navLinks } from '@/app/constants/constants';
 
 interface AboutSectionProps {
     title: string;
@@ -41,7 +42,7 @@ export function AboutSection({title, text, image}: AboutSectionProps) {
 export function About() {
 return (
     <>
-        <Title order={1} ta="center" mt={100}>About</Title>
+        <Title order={1} ta="center" mt={100}>{navLinks.map((item) => {if (item.id === 'about') return item.title;})}</Title>
         {aboutUs.map(element => {
             return <AboutSection title={element.title} text={element.text} image={element.image} />
         })}

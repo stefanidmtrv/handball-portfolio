@@ -2,7 +2,7 @@ import { Center, Stack, Title } from "@mantine/core";
 import { Avatar, Text, Group } from '@mantine/core';
 import { IconPhoneCall, IconAt } from '@tabler/icons-react';
 import classes from './Coaches.module.css';
-import { coaches } from "@/app/constants/constants";
+import { coaches, navLinks } from "@/app/constants/constants";
 
 interface CoachesSectionProps {
     name: string;
@@ -53,7 +53,7 @@ export function CoachesSection( {name, title, image, email, phone}: CoachesSecti
 export function Coaches() {
 return (
     <Stack align="center">
-        <Title order={1} ta="center" mt={100}>Coaches</Title>
+        <Title order={1} ta="center" mt={100}>{navLinks.map((item) => {if (item.id === 'coaches') return item.title;})}</Title>
         <Group className={classes.coachesContainer} gap="xl">
             {coaches.map((item) => {
                 return <CoachesSection name={item.name} title={item.title} image={item.img} email={item.email} phone={item.phone}/>

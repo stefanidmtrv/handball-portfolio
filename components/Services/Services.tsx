@@ -7,8 +7,8 @@ import {
     useMantineTheme,
   } from '@mantine/core';
   import classes from './Services.module.css';
-  import { services } from '@/app/constants/constants';
-  
+  import { navLinks, services } from '@/app/constants/constants';
+
 interface ServicesCardProps {
     title: string;
     text: string;
@@ -32,7 +32,7 @@ export function Services() {
   
     return (
       <Container size="lg" py="xl">
-        <Title order={1} ta="center" mt={100}>Services</Title>
+        <Title order={1} ta="center" mt={100}>{navLinks.map((item) => {if (item.id === 'services') return item.title;})}</Title>
         <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
           {services.map((feature) => (
                 <ServicesCard title={feature.title} text={feature.text}/>
