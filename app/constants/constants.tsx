@@ -127,15 +127,15 @@ export const services = [
 export const partners = [
     {
         name: bulgarian ? "" : "",
-        img: '/handballFederation.png'
+        img: 'handballFederation.png'
     },
     {
         name: bulgarian ? "" : "",
-        img: '/Ministry.png'
+        img: 'Ministry.png'
     },
     {
         name: bulgarian ? "" : "",
-        img: '/sofiaMunicipality.png'
+        img: 'sofiaMunicipality.png'
     },
     // {
     //     name: bulgarian ? "" : "",

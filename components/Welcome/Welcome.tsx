@@ -11,9 +11,9 @@ export function Welcome() {
           {welcomeText.clubName}
         </Text>
       </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl" p="sm">
+      {/* <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl" p="sm">
        {welcomeText.text}
-      </Text>
+      </Text> */}
     </Stack>
   );
 }
